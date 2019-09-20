@@ -3,18 +3,47 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30E52AFBEDDB2FE92401CAF5 /* Pods_RealmDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863819AEA3CE6A7ECE39752A /* Pods_RealmDemo.framework */; };
 		EF2BA93923337AA3001E4F5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA93823337AA3001E4F5A /* AppDelegate.swift */; };
 		EF2BA93B23337AA3001E4F5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA93A23337AA3001E4F5A /* ViewController.swift */; };
 		EF2BA93E23337AA3001E4F5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2BA93C23337AA3001E4F5A /* Main.storyboard */; };
 		EF2BA94023337AA5001E4F5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2BA93F23337AA5001E4F5A /* Assets.xcassets */; };
 		EF2BA94323337AA5001E4F5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2BA94123337AA5001E4F5A /* LaunchScreen.storyboard */; };
+		EF2BA94D23338C67001E4F5A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA94C23338C67001E4F5A /* HomeViewController.swift */; };
+		EF2BA95223339C6D001E4F5A /* PostItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA95123339C6D001E4F5A /* PostItemCell.swift */; };
+		EF2BA9552334718F001E4F5A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA9542334718F001E4F5A /* ActivityIndicator.swift */; };
+		EF2BA957233471CF001E4F5A /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA956233471CF001E4F5A /* ErrorTracker.swift */; };
+		EF2BA9592334835D001E4F5A /* Observable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA9582334835D001E4F5A /* Observable+Ext.swift */; };
+		EF2BA95B23348397001E4F5A /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA95A23348397001E4F5A /* Reusable.swift */; };
+		EF2BA95F2334881C001E4F5A /* PostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA95E2334881C001E4F5A /* PostsUseCase.swift */; };
+		EF2BA96123348828001E4F5A /* PostsUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA96023348828001E4F5A /* PostsUseCaseProvider.swift */; };
+		EF2BA967233488B8001E4F5A /* PostsNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA966233488B8001E4F5A /* PostsNetwork.swift */; };
+		EF2BA96B23348943001E4F5A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA96A23348943001E4F5A /* Post.swift */; };
+		EF2BA96D23348999001E4F5A /* PostsDomainUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA96C23348999001E4F5A /* PostsDomainUseCase.swift */; };
+		EF2BA96F233489AA001E4F5A /* PostsDomainUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA96E233489AA001E4F5A /* PostsDomainUseCaseProvider.swift */; };
+		EF2BA97223348AF0001E4F5A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA97123348AF0001E4F5A /* Network.swift */; };
+		EF2BA97423348B4B001E4F5A /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA97323348B4B001E4F5A /* NetworkProvider.swift */; };
+		EF2BA97823348D8E001E4F5A /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA97723348D8E001E4F5A /* Encodable.swift */; };
+		EF2BA97A23348DA1001E4F5A /* Post+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA97923348DA1001E4F5A /* Post+Mapping.swift */; };
+		EF2BA97D23348E6D001E4F5A /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA97C23348E6D001E4F5A /* Cache.swift */; };
+		EF2BA98123348F13001E4F5A /* AbstractCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA98023348F13001E4F5A /* AbstractCache.swift */; };
+		EF2BA984233496F6001E4F5A /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA983233496F6001E4F5A /* Injection.swift */; };
+		EF2BA988233497A3001E4F5A /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA987233497A3001E4F5A /* ViewModelType.swift */; };
+		EF2BA98A233497BF001E4F5A /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA989233497BF001E4F5A /* PostsViewModel.swift */; };
+		EF2BA98C23349822001E4F5A /* PostItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA98B23349822001E4F5A /* PostItemViewModel.swift */; };
+		EF2BA9902334D978001E4F5A /* DomainConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA98F2334D978001E4F5A /* DomainConvertibleType.swift */; };
+		EF2BA9922334D986001E4F5A /* RealmRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA9912334D986001E4F5A /* RealmRepresentable.swift */; };
+		EF2BA9942334DB0C001E4F5A /* RMPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BA9932334DB0C001E4F5A /* RMPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EF2E123DE9D22D7A12E9113 /* Pods-RealmDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmDemo.release.xcconfig"; path = "Target Support Files/Pods-RealmDemo/Pods-RealmDemo.release.xcconfig"; sourceTree = "<group>"; };
+		863819AEA3CE6A7ECE39752A /* Pods_RealmDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2186A97359B3AEBF4AAC91 /* Pods-RealmDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmDemo.debug.xcconfig"; path = "Target Support Files/Pods-RealmDemo/Pods-RealmDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EF2BA93523337AA3001E4F5A /* RealmDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2BA93823337AA3001E4F5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF2BA93A23337AA3001E4F5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +51,31 @@
 		EF2BA93F23337AA5001E4F5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF2BA94223337AA5001E4F5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF2BA94423337AA5001E4F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF2BA94C23338C67001E4F5A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EF2BA95123339C6D001E4F5A /* PostItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemCell.swift; sourceTree = "<group>"; };
+		EF2BA9542334718F001E4F5A /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		EF2BA956233471CF001E4F5A /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		EF2BA9582334835D001E4F5A /* Observable+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Ext.swift"; sourceTree = "<group>"; };
+		EF2BA95A23348397001E4F5A /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		EF2BA95E2334881C001E4F5A /* PostsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsUseCase.swift; sourceTree = "<group>"; };
+		EF2BA96023348828001E4F5A /* PostsUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsUseCaseProvider.swift; sourceTree = "<group>"; };
+		EF2BA966233488B8001E4F5A /* PostsNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsNetwork.swift; sourceTree = "<group>"; };
+		EF2BA96A23348943001E4F5A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EF2BA96C23348999001E4F5A /* PostsDomainUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDomainUseCase.swift; sourceTree = "<group>"; };
+		EF2BA96E233489AA001E4F5A /* PostsDomainUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDomainUseCaseProvider.swift; sourceTree = "<group>"; };
+		EF2BA97123348AF0001E4F5A /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		EF2BA97323348B4B001E4F5A /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		EF2BA97723348D8E001E4F5A /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		EF2BA97923348DA1001E4F5A /* Post+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+Mapping.swift"; sourceTree = "<group>"; };
+		EF2BA97C23348E6D001E4F5A /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		EF2BA98023348F13001E4F5A /* AbstractCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractCache.swift; sourceTree = "<group>"; };
+		EF2BA983233496F6001E4F5A /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		EF2BA987233497A3001E4F5A /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		EF2BA989233497BF001E4F5A /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		EF2BA98B23349822001E4F5A /* PostItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemViewModel.swift; sourceTree = "<group>"; };
+		EF2BA98F2334D978001E4F5A /* DomainConvertibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainConvertibleType.swift; sourceTree = "<group>"; };
+		EF2BA9912334D986001E4F5A /* RealmRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRepresentable.swift; sourceTree = "<group>"; };
+		EF2BA9932334DB0C001E4F5A /* RMPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMPost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +83,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30E52AFBEDDB2FE92401CAF5 /* Pods_RealmDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF2B2F007AA03A08C0415A45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				863819AEA3CE6A7ECE39752A /* Pods_RealmDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF2BA92C23337AA3001E4F5A = {
 			isa = PBXGroup;
 			children = (
 				EF2BA93723337AA3001E4F5A /* RealmDemo */,
 				EF2BA93623337AA3001E4F5A /* Products */,
+				EFB7267AE3DFC687D3FFD40A /* Pods */,
+				DF2B2F007AA03A08C0415A45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +119,10 @@
 		EF2BA93723337AA3001E4F5A /* RealmDemo */ = {
 			isa = PBXGroup;
 			children = (
+				EF2BA94A233380A6001E4F5A /* App */,
+				EF2BA9642334886E001E4F5A /* Database */,
+				EF2BA9632334885A001E4F5A /* Network */,
+				EF2BA96223348851001E4F5A /* Domain */,
 				EF2BA93823337AA3001E4F5A /* AppDelegate.swift */,
 				EF2BA93A23337AA3001E4F5A /* ViewController.swift */,
 				EF2BA93C23337AA3001E4F5A /* Main.storyboard */,
@@ -64,6 +133,204 @@
 			path = RealmDemo;
 			sourceTree = "<group>";
 		};
+		EF2BA94A233380A6001E4F5A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA982233496E8001E4F5A /* DI */,
+				EF2BA95323347181001E4F5A /* Utility */,
+				EF2BA94B233380AB001E4F5A /* Scences */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EF2BA94B233380AB001E4F5A /* Scences */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA98623349793001E4F5A /* Common */,
+				EF2BA95C233486C9001E4F5A /* Home */,
+			);
+			path = Scences;
+			sourceTree = "<group>";
+		};
+		EF2BA94E23339C41001E4F5A /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA95123339C6D001E4F5A /* PostItemCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		EF2BA95323347181001E4F5A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA9542334718F001E4F5A /* ActivityIndicator.swift */,
+				EF2BA956233471CF001E4F5A /* ErrorTracker.swift */,
+				EF2BA9582334835D001E4F5A /* Observable+Ext.swift */,
+				EF2BA95A23348397001E4F5A /* Reusable.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		EF2BA95C233486C9001E4F5A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA9852334977B001E4F5A /* viewmodel */,
+				EF2BA94E23339C41001E4F5A /* cell */,
+				EF2BA94C23338C67001E4F5A /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EF2BA95D233487F7001E4F5A /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA95E2334881C001E4F5A /* PostsUseCase.swift */,
+				EF2BA96023348828001E4F5A /* PostsUseCaseProvider.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		EF2BA96223348851001E4F5A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA9692334890F001E4F5A /* UseCases */,
+				EF2BA968233488F9001E4F5A /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EF2BA9632334885A001E4F5A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA97B23348E61001E4F5A /* Cache */,
+				EF2BA97523348D5C001E4F5A /* Entities */,
+				EF2BA97023348AE0001E4F5A /* Network */,
+				EF2BA965233488A8001E4F5A /* API */,
+				EF2BA95D233487F7001E4F5A /* UseCases */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EF2BA9642334886E001E4F5A /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA98D2334D952001E4F5A /* Entities */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		EF2BA965233488A8001E4F5A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA966233488B8001E4F5A /* PostsNetwork.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EF2BA968233488F9001E4F5A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA96A23348943001E4F5A /* Post.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		EF2BA9692334890F001E4F5A /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA96C23348999001E4F5A /* PostsDomainUseCase.swift */,
+				EF2BA96E233489AA001E4F5A /* PostsDomainUseCaseProvider.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		EF2BA97023348AE0001E4F5A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA97123348AF0001E4F5A /* Network.swift */,
+				EF2BA97323348B4B001E4F5A /* NetworkProvider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EF2BA97523348D5C001E4F5A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA97623348D73001E4F5A /* Encodable */,
+				EF2BA97923348DA1001E4F5A /* Post+Mapping.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		EF2BA97623348D73001E4F5A /* Encodable */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA97723348D8E001E4F5A /* Encodable.swift */,
+			);
+			path = Encodable;
+			sourceTree = "<group>";
+		};
+		EF2BA97B23348E61001E4F5A /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA97C23348E6D001E4F5A /* Cache.swift */,
+				EF2BA98023348F13001E4F5A /* AbstractCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		EF2BA982233496E8001E4F5A /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA983233496F6001E4F5A /* Injection.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		EF2BA9852334977B001E4F5A /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA989233497BF001E4F5A /* PostsViewModel.swift */,
+				EF2BA98B23349822001E4F5A /* PostItemViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		EF2BA98623349793001E4F5A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA987233497A3001E4F5A /* ViewModelType.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EF2BA98D2334D952001E4F5A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA98E2334D963001E4F5A /* Convertion */,
+				EF2BA9932334DB0C001E4F5A /* RMPost.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		EF2BA98E2334D963001E4F5A /* Convertion */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BA98F2334D978001E4F5A /* DomainConvertibleType.swift */,
+				EF2BA9912334D986001E4F5A /* RealmRepresentable.swift */,
+			);
+			path = Convertion;
+			sourceTree = "<group>";
+		};
+		EFB7267AE3DFC687D3FFD40A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE2186A97359B3AEBF4AAC91 /* Pods-RealmDemo.debug.xcconfig */,
+				1EF2E123DE9D22D7A12E9113 /* Pods-RealmDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +338,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF2BA94723337AA5001E4F5A /* Build configuration list for PBXNativeTarget "RealmDemo" */;
 			buildPhases = (
+				9492A82AD84D07373DEBA99C /* [CP] Check Pods Manifest.lock */,
 				EF2BA93123337AA3001E4F5A /* Sources */,
 				EF2BA93223337AA3001E4F5A /* Frameworks */,
 				EF2BA93323337AA3001E4F5A /* Resources */,
+				91EE9F9193EA849DFB5429A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +399,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		91EE9F9193EA849DFB5429A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealmDemo/Pods-RealmDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealmDemo/Pods-RealmDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealmDemo/Pods-RealmDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9492A82AD84D07373DEBA99C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealmDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EF2BA93123337AA3001E4F5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2BA988233497A3001E4F5A /* ViewModelType.swift in Sources */,
+				EF2BA984233496F6001E4F5A /* Injection.swift in Sources */,
 				EF2BA93B23337AA3001E4F5A /* ViewController.swift in Sources */,
+				EF2BA957233471CF001E4F5A /* ErrorTracker.swift in Sources */,
+				EF2BA97A23348DA1001E4F5A /* Post+Mapping.swift in Sources */,
+				EF2BA9552334718F001E4F5A /* ActivityIndicator.swift in Sources */,
+				EF2BA96D23348999001E4F5A /* PostsDomainUseCase.swift in Sources */,
+				EF2BA96B23348943001E4F5A /* Post.swift in Sources */,
+				EF2BA9942334DB0C001E4F5A /* RMPost.swift in Sources */,
+				EF2BA97423348B4B001E4F5A /* NetworkProvider.swift in Sources */,
+				EF2BA97223348AF0001E4F5A /* Network.swift in Sources */,
+				EF2BA9922334D986001E4F5A /* RealmRepresentable.swift in Sources */,
 				EF2BA93923337AA3001E4F5A /* AppDelegate.swift in Sources */,
+				EF2BA96F233489AA001E4F5A /* PostsDomainUseCaseProvider.swift in Sources */,
+				EF2BA95B23348397001E4F5A /* Reusable.swift in Sources */,
+				EF2BA97D23348E6D001E4F5A /* Cache.swift in Sources */,
+				EF2BA95223339C6D001E4F5A /* PostItemCell.swift in Sources */,
+				EF2BA96123348828001E4F5A /* PostsUseCaseProvider.swift in Sources */,
+				EF2BA98123348F13001E4F5A /* AbstractCache.swift in Sources */,
+				EF2BA98A233497BF001E4F5A /* PostsViewModel.swift in Sources */,
+				EF2BA95F2334881C001E4F5A /* PostsUseCase.swift in Sources */,
+				EF2BA98C23349822001E4F5A /* PostItemViewModel.swift in Sources */,
+				EF2BA9592334835D001E4F5A /* Observable+Ext.swift in Sources */,
+				EF2BA97823348D8E001E4F5A /* Encodable.swift in Sources */,
+				EF2BA94D23338C67001E4F5A /* HomeViewController.swift in Sources */,
+				EF2BA9902334D978001E4F5A /* DomainConvertibleType.swift in Sources */,
+				EF2BA967233488B8001E4F5A /* PostsNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +616,7 @@
 		};
 		EF2BA94823337AA5001E4F5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE2186A97359B3AEBF4AAC91 /* Pods-RealmDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +635,7 @@
 		};
 		EF2BA94923337AA5001E4F5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EF2E123DE9D22D7A12E9113 /* Pods-RealmDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

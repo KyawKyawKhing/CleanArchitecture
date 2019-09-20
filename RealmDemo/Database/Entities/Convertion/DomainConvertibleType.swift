@@ -1,0 +1,15 @@
+//
+//  DomainConvertibleType.swift
+//  RealmDemo
+//
+//  Created by Kyaw Kyaw Khing on 9/20/19.
+//  Copyright © 2019 Kyaw Kyaw Khing. All rights reserved.
+//
+
+import Foundation
+
+protocol DBDomainConvertibleType {
+    associatedtype DomainType
+    
+    func asDomain() -> DomainType
+}
