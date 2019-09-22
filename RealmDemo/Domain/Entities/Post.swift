@@ -45,23 +45,25 @@ public struct Post: Codable {
         body = try container.decode(String.self, forKey: .body)
         title = try container.decode(String.self, forKey: .title)
         
-        if let createdAt = try container.decodeIfPresent(Int.self, forKey: .createdAt) {
-            self.createdAt = "\(createdAt)"
-        } else {
-            createdAt = try container.decodeIfPresent(String.self, forKey: .createdAt) ?? ""
-        }
+//        if let createdAt = try container.decodeIfPresent(Int.self, forKey: .createdAt) {
+//            self.createdAt = "\(createdAt)"
+//        } else {
+//            createdAt = try container.decodeIfPresent(String.self, forKey: .createdAt) ?? ""
+//        }
+        createdAt = ""
+        userId = ""
+        uid = ""
+//        if let userId = try container.decodeIfPresent(Int.self, forKey: .userId) {
+//            self.userId = "\(userId)"
+//        } else {
+//            userId = try container.decode(String.self, forKey: .userId)
+//        }
         
-        if let userId = try container.decodeIfPresent(Int.self, forKey: .userId) {
-            self.userId = "\(userId)"
-        } else {
-            userId = try container.decode(String.self, forKey: .userId)
-        }
-        
-        if let uid = try container.decodeIfPresent(Int.self, forKey: .uid) {
-            self.uid = "\(uid)"
-        } else {
-            uid = try container.decodeIfPresent(String.self, forKey: .uid) ?? ""
-        }
+//        if let uid = try container.decodeIfPresent(Int.self, forKey: .uid) {
+//            self.uid = "\(uid)"
+//        } else {
+//            uid = try container.decodeIfPresent(String.self, forKey: .uid) ?? ""
+//        }
     }
 }
 

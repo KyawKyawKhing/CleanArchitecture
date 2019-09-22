@@ -8,7 +8,7 @@
 
 import Foundation
 
-public final class PostsUseCaseProvider: PostsDomainUseCaseProvider {
+public final class PostsNetworkUseCaseProvider: PostsDomainUseCaseProvider {
     private let networkProvider: NetworkProvider
     
     public init() {
@@ -16,7 +16,7 @@ public final class PostsUseCaseProvider: PostsDomainUseCaseProvider {
     }
     
     func makePostsDomainUseCase() -> PostsDomainUseCase {
-        return PostsUseCase(network: networkProvider.makePostsNetwork(),
+        return PostsNetworkUseCase(network: networkProvider.makePostsNetwork(),
                             cache: Cache<Post>(path: "allPosts"))
     }
     

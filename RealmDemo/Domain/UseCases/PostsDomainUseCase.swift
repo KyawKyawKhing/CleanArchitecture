@@ -12,5 +12,6 @@ import RxSwift
 protocol PostsDomainUseCase{
     func posts() -> Observable<[Post]>
     func save(post: Post) -> Observable<Void>
+    func save(posts: [Post]) -> Observable<Void>
     func delete(post: Post) -> Observable<Void>
 }

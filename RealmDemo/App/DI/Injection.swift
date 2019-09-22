@@ -10,6 +10,9 @@ import Foundation
 
 class Injection{
     static func providePostNetworkUserCaseProvider() -> PostsDomainUseCaseProvider{
-        return PostsUseCaseProvider()
+        return PostsNetworkUseCaseProvider()
+    }
+    static func providePostDBUserCaseProvider() -> PostsDomainUseCaseProvider{
+        return PostDBUseCaseProvider()
     }
 }
